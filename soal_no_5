@@ -1,0 +1,15 @@
+ Public Function count_handshake(ByRef person As Integer) As Integer
+        Dim countShake As Integer = 0
+        If person > 1 Then
+            For i = 1 To person
+                For j = 1 To person
+                    If j > i Then
+                        countShake = countShake + 1
+                    End If
+                Next
+            Next
+        Else
+            countShake = 0
+        End If
+        Return countShake
+    End Function

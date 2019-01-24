@@ -1,0 +1,14 @@
+Private Function print_abc(ByVal nil1 As Integer, ByVal nil2 As Integer) As String
+        Dim strresult As String = ""
+        Dim r As Integer = 0
+        For i = 1 To nil2
+            r = r + 1
+            strresult = strresult & Chr(r + 64)
+            For j = 1 To nil1 - 1
+                r = r + 1
+                strresult = strresult & Chr(r + 64)
+            Next
+            strresult = strresult & vbNewLine
+        Next
+        Return strresult
+    End Function
